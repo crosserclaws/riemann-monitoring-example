@@ -7,7 +7,7 @@
 (let [index (default :ttl 300 (index))]
   (streams index))
 ```
-這一段的主程式是寫入：具體的語意是，凡是來自於 `streams` 的 event 都要放進 index 裡，如果沒有設定 time to live 的話，預設的 time to live 會設定成 300 秒。
+凡是來自於 `streams` 的 event 都要放進 index 裡，如果沒有設定 time to live 的話，預設的 time to live 會設定成 300 秒。
 
 ## read from index
 ```
@@ -35,4 +35,6 @@
 ```
 (:tags ...)
 ```
-這一段 code snippet 的作用是：將事件的 tags 欄位的值取出。事件 (event) 的 tags 欄位的值在此處會是一個 vector of strings。 特別注意，這段 code snippet 的寫法是應用了 clojure 的 keyword as function 的寫法。
+這一段 code snippet 的作用是：將事件的 tags 欄位的值取出。事件 (event) 的 tags 欄位的值在此處會是一個 vector of strings。
+
+特別注意：這段 code snippet 的寫法是應用了 clojure 的 keyword as function 寫法。
