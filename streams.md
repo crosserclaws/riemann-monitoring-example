@@ -1,6 +1,6 @@
 #Streams
 
-在 vip 監控裡，只有使用兩次 `streams` 。
+在 vip 監控裡，只有使用兩次「串流 `streams` 」。
 ```
 (streams
   ; tags event with a group name and publish it to the group channel.
