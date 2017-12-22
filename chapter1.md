@@ -1,4 +1,4 @@
-# Index
+# index
 
 閱讀 `riemann.config` 檔，首先要去注意 index 的使用。 相同 service, host 的監控項，放進 index 之後， index 會總是只保留最新的一筆。也因此，我在實作 vip 監控時，其實是把 index 也做為 temporary cache 來使用。一些 vip 監控的「vip列表」，我用外部的 `virtualIP.py` 這個檔案，將「vip列表」、「vip與平台的對應關系」都送進 Riemann 。然後，Riemann 就會將這些資訊暫存在 index 裡。
 

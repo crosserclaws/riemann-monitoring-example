@@ -1,4 +1,4 @@
-#Streams
+#streams
 
 在 vip 監控裡，只有使用兩次「串流 `streams` 」。
 ```
