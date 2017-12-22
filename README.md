@@ -1,3 +1,5 @@
-# My Awesome Book
+# Code explanation
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+本文件是針對 vip 監控的 Riemann config 的解說。
+
+
