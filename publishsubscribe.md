@@ -1,5 +1,7 @@
 # publish/subscribe
 
+publish/subscribe 是 Riemann 裡，用來做出類似事件的通道 (channel) 的語法。
+
 ```
 (streams
   (smap (fn [e] e)
@@ -12,7 +14,7 @@
 
 上述的範例：
 
-## publish (送進 channel)
+## publish (送進 channel )
 對於系統流入的每個事件 (event) ，先對它做一個 smap 操作，不過剛好在此處的操作是 identity 操作，即不對事件做任何修改。操作完之後，就將事件送進 "hostgroup" 這個 channel 。
 
 ## subscribe (從 channel 提取事件)
