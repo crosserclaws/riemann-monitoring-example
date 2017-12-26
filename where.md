@@ -1,4 +1,4 @@
-# where
+# where/where*
 
 Riemann 的 where 語意，與事件 (event) 的模型綁在一起。
 
@@ -23,3 +23,30 @@ Riemann 的 where 語意，與事件 (event) 的模型綁在一起。
 ```
 
 如果 `where` 得到的事件裡的 `state` 欄位，它的值不是 `expired` 就印出。
+
+# where* 
+where* 相對於 where 是跟事件，比較沒有綁得這麼緊的版本。如果需要做比較通用的「事件過濾器」，就要考慮使用 `where*`
+
+解說 where* 的範例前，首先要介紹 clojure 的 lambda 語法。
+
+## clojure lambda
+```
+#(:all %)
+```
+跟下例是等價的
+```
+(fn [e]
+  (:all e))
+```
+意思就是，如果輸入的引數是一個 map ，就將 all 欄位的值取出。
+
+## where* 範例
+```
+(where* #(:all %)
+        #(owl/send->owl % vip-rule)
+        (else prn))
+```
+`where*` 的條件判斷是看「是否 event 進入條件判斷式 #(:all %) 之後可以得到 true 值」
+
+如果得到 true ，執行 `#(owl/send->owl % vip-rule)`
+如果得到 false ，執行 `prn`
