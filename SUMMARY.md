@@ -4,4 +4,5 @@
 * [index](chapter1.md)
 * [streams](streams.md)
 * [smap](smap.md)
+* [clojure -- when, when-let, assoc](clojure-when-when-let-assoc.md)
 
