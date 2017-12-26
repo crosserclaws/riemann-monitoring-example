@@ -7,4 +7,5 @@
 * [clojure -- when, when-let, assoc](clojure-when-when-let-assoc.md)
 * [publish/subscribe](publishsubscribe.md)
 * [where/where\*](where.md)
+* [trigger 告警](trigger-gao-jing.md)
 
