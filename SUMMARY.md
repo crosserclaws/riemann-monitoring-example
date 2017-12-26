@@ -6,5 +6,5 @@
 * [smap](smap.md)
 * [clojure -- when, when-let, assoc](clojure-when-when-let-assoc.md)
 * [publish/subscribe](publishsubscribe.md)
-* [where](where.md)
+* [where/where\*](where.md)
 
