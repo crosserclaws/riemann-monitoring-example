@@ -16,6 +16,12 @@ Riemann 的 where 語意，與事件 (event) 的模型綁在一起。
 | metric | 事件的數值。e.g. the number of reqs/sec |
 | ttl | 單位為秒。這個事件「有效」的期間。逾時的話，事件可能會被從索引移除。 |
 
+### 與 Open-Falcon 的對應關系
+1. Riemann event 的 `host` 對應 Open-Falcon 的 `endpoint`
+2. Riemann event 的 `service` 對應 Open-Falcon 的 `metric`
+3. Riemann event 的 `tags` 也是對應 Open-Falcon 的 `tags`
+4. Riemann event 的 ttl  是處理 Open-Falcon 的 nodata 模組處理的問題。
+
 ## where 範例
 ```
 (where (not (state "expired"))
