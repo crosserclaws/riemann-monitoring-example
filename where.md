@@ -20,7 +20,7 @@ Riemann 的 where 語意，與事件 (event) 的模型綁在一起。
 1. Riemann event 的 `host` 對應 Open-Falcon 的 `endpoint`
 2. Riemann event 的 `service` 對應 Open-Falcon 的 `metric`
 3. Riemann event 的 `tags` 也是對應 Open-Falcon 的 `tags`
-4. Riemann event 的 ttl  是處理 Open-Falcon 的 nodata 模組處理的問題。
+4. Riemann event 的 `ttl`  是處理 Open-Falcon 的 nodata 模組處理的問題。
 
 ## where 範例
 ```
