@@ -41,5 +41,8 @@ virtualIP.py 可以接受三種不同的 input argument。每一個 argument 會
 | tags | [平台1, 平台2, ...] | [平台1, 平台2, ...] | [負責人1, 負責人2, ...] |
 | ttl | 3600 | 600 | 86400 |
 
+之後會緩存在 Riemann 的 index 裡的資料，key 是二維度的 key ，分別由 `host`, `service` 兩個欄位來表現。而 value 則是用 `tags` 欄位來表現。 
+
+此處會特別選用 `host` 和 `service` 來做存放 key 是因為 Riemann 的內建函數 `riemann.index/lookup` 就是使用 `host`, `service` 來做查表。
 
 
