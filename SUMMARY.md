@@ -8,5 +8,6 @@
 * [publish/subscribe](publishsubscribe.md)
 * [where/where\*](where.md)
 * [trigger 告警](trigger-gao-jing.md)
-* [python script](python-script.md)
+* [python 與 Riemann 的溝通](python-script.md)
+* [VirtualIP.py](virtualippy.md)
 
